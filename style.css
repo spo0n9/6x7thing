@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    align-items: top;
+    padding: 0px;
+    
+}
+
+@font-face { font-family: Bebas; src: url('Bebas-Regular.TTF'); } 
+      h1 {
+         font-family: Bebas
+      }
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display:inline-block;
+  margin-right: 25px;
+}
+
+.test {
+  width: 70px;
+  transition: width 0.5s;
+  padding-right:10px;
+}
+
+.test:hover {
+    width: 90px;
+    text-decoration:none;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+  }
+  
+  /* visited link */
+a:visited {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+  }
+  
+  /* selected link */
+a:active {
+    color: rgb(0, 0, 0);
+    font: 1.3em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+}
+
+.Featured {
+  text-align: center;
+}
+
+.button {
+  background-color: #6062d3; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #6062d3;
+}
+
+.button1:hover {
+  background-color: #6062d3;
+  color: white;
+}
+
+#indexlogo {
+  margin-top: 8px;
+}

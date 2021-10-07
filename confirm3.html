@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+      <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+      <link rel="stylesheet" href="confirm.css">
+      <script src="cartlogic.js"></script>
+        <title>Confirm</title>
+    <body onLoad="confirm();">
+        <div class="navbar">
+            <img src="images/logo.png" alt="logo" height="50px">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="home"><div class="test">Home</a></li>
+                    <li><a href="DeliveryLocations.html"><div class="test">Delivery</a></li>
+                    <li><a href="products.html"><div class="test">Products</a></li>
+                    <li><a href="sponsorship.html"><div class="test">Sponsors</a></li>
+                    <li><a href="contact.html"><div class="test">Contact</a></li>
+                      <li><a href="cart.html"><div class="test"><img src = "images/shopping-cart.svg" alt="cart svg"/></a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div id="smart-button-container">
+          <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+          </div>
+        </div>
+      <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+      <script>
+        function initPayPalButton() {
+          paypal.Buttons({
+            style: {
+              shape: 'rect',
+              color: 'gold',
+              layout: 'vertical',
+              label: 'paypal',
+              
+            },
+    
+            createOrder: function(data, actions) {
+              return actions.order.create({
+                purchase_units: [{"amount":{"currency_code":"USD","value":localStorage.getItem('TotalFinalPriceDefinitelyFinalNoMore')}}]
+              });
+            },
+    
+            onApprove: function(data, actions) {
+              return actions.order.capture().then(function(orderData) {
+                
+                // Full available details
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+    
+                // Show a success message within this page, e.g.
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+    
+                // Or go to another URL:  actions.redirect('thank_you.html');
+                
+              });
+            },
+    
+            onError: function(err) {
+              console.log(err);
+            }
+          }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+      </script>
+          
+    </body>
+</html>

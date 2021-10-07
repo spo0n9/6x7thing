@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+<script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js"></script>
+
+      <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+      <link rel="stylesheet" href="confirm.css">
+      <script src="cartlogic.js"></script>
+        <title>Confirm</title>
+    <body onLoad="confirm();">
+        <div class="navbar">
+            <img src="images/logo.png" alt="logo" height="50px">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="home"><div class="test">Home</a></li>
+                    <li><a href="DeliveryLocations.html"><div class="test">Delivery</a></li>
+                    <li><a href="products.html"><div class="test">Products</a></li>
+                    <li><a href="sponsorship.html"><div class="test">Sponsors</a></li>
+                    <li><a href="contact.html"><div class="test">Contact</a></li>
+                      <li><a href="cart.html"><div class="test"><img src = "images/shopping-cart.svg" alt="cart svg"/></a></li>
+                </ul>
+            </nav>
+            <div class="test">
+            </div>
+        </div>
+        <hr>
+        <form action="https://formspree.io/f/xrgryqkg" method="POST">
+            Full Name: <input placeholder="Enter Your Full Name Here" type="text" name="name" required><br>
+            Contact Email: <input placeholder="Enter Your Email Here" type="email" name="email" required><br>
+            Address: <input placeholder="Enter Your Address Here" type="text" name="address" required><br>
+            Date For Pickup: <input type="date" name="address" required><br><br>
+            Location For Pickup: <input type="text" name="address" required><br>
+            Final Checkout Price: <input type="text" name="Price" id="orderPrice" readonly><br>
+            <br><textarea rows="5" name="message" cols="30" id="orderProducts" readonly style="display:none;"></textarea><br>
+            <input type="submit" name="submit" value="Confirm Order Pickup">
+          </form>
+    </body>
+</html>

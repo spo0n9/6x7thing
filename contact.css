@@ -1,0 +1,148 @@
+.navbar {
+    display: flex;
+    align-items: top;
+    padding: 0px;
+    
+}
+
+@font-face { font-family: Bebas; src: url('Bebas-Regular.TTF'); } 
+      h1 {
+         font-family: Bebas
+      }
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display:inline-block;
+  margin-right: 20px;
+}
+
+.test {
+  width: 70px;
+  transition: width 0.5s;
+  padding-right:10px;
+}
+
+.test:hover {
+    width: 90px;
+    text-decoration:none;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+  }
+  
+  /* visited link */
+a:visited {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+  }
+  
+  /* selected link */
+a:active {
+    color: rgb(0, 0, 0);
+    font: 1.3em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+}
+
+
+/*title*/
+
+.title {
+  font-family:sans-serif;
+  padding-left:25px;
+}
+
+/*Contact form*/
+
+label {
+  font-family:sans-serif;
+}
+
+        /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border-color:black;
+  border:solid 1.5px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family:"arial";
+
+  border-radius: 15px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ce2020;
+    border: none;
+    border-radius:15px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color:rgb(255,255,255);
+  color:#ce2020;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  width:80vw;
+  border-radius: 25px black;
+  padding: 20px;
+}
+
+#learnmore:link {
+  color: #2200CC;
+  font: 1em sans-serif;
+}
+
+/* visited link */
+#learnmore:visited {
+  color: #2200CC;
+  font: 1em sans-serif;
+  
+}
+
+/* mouse over link */
+#learnmore:hover {
+  color: #2200CC;
+  font: 1em sans-serif;
+  text-decoration: underline;
+  
+}

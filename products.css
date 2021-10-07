@@ -1,0 +1,115 @@
+                        .navbar {
+    display: flex;
+    align-items: top;
+    padding: 0px;
+    
+}
+
+@font-face { font-family: Bebas; src: url('Bebas-Regular.TTF'); } 
+      h1 {
+         font-family: Bebas
+      }
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display:inline-block;
+  margin-right: 20px;
+}
+
+.test {
+  width: 70px;
+  transition: width 0.5s;
+  padding-right:10px;
+}
+
+.test:hover {
+    width: 90px;
+    text-decoration:none;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+  }
+  
+  /* visited link */
+a:visited {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+  }
+  
+  /* mouse over link */
+a:hover {
+    color: rgb(0, 0, 0);
+    font: 1.5em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+  }
+  
+  /* selected link */
+a:active {
+    color: rgb(0, 0, 0);
+    font: 1.3em sans-serif;
+    font-family:"Bebas";
+    text-decoration: none;
+    
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  float: Left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productslist {
+  align-items: center;
+}
